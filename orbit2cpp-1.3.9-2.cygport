@@ -1,0 +1,22 @@
+ORIG_PN="orbitcpp"
+
+inherit gnome2
+
+DESCRIPTION="ORBit C++ bindings"
+HOMEPAGE="http://orbitcpp.sourceforge.net/"
+
+PATCH_URI="
+	1.3.9-no-undefined.patch
+	1.3.9-vpath.patch
+"
+
+PKG_NAMES="${PN} libORBit2cpp9 libORBit2cpp-devel"
+libORBit2cpp9_CONTENTS="usr/bin/*-9.dll usr/share/"
+libORBit2cpp_devel_CONTENTS='usr/include/ usr/lib/'
+
+MAKEOPTS+=" -C orbitcpp"
+
+src_test() {
+	cd ${B}
+	MAKEOPTS=  cygmake -j1 -C test
+}

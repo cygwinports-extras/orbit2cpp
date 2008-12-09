@@ -1,0 +1,120 @@
+orbit2cpp
+------------------------------------------
+C++ bindings for the ORBit2 CORBA ORB.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.3-1
+  libIDL2_0-0.8.12-1
+  libORBit2_0-2.14.16-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.2-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  gnome-common-2.24.0-1
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://orbitcpp.sourceforge.net/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/orbitcpp/
+
+-------------------------------------------
+
+Build instructions:
+  unpack orbit2cpp-1.3.9-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./orbit2cpp-1.3.9-X.cygport all
+
+This will create:
+  /usr/src/orbit2cpp-1.3.9-X-src.tar.bz2
+  /usr/src/libORBit2cpp-devel-1.3.9-X.tar.bz2
+  /usr/src/libORBit2cpp9-1.3.9-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(libORBit2cpp9)
+  /usr/bin/cygORBit-2-cpp-9.dll
+  /usr/bin/cygORBitCosNaming-2-cpp-9.dll
+  /usr/share/doc/orbit2cpp-1.3.9/AUTHORS
+  /usr/share/doc/orbit2cpp-1.3.9/COPYING
+  /usr/share/doc/orbit2cpp-1.3.9/ChangeLog
+  /usr/share/doc/orbit2cpp-1.3.9/INSTALL
+  /usr/share/doc/orbit2cpp-1.3.9/NEWS
+  /usr/share/doc/orbit2cpp-1.3.9/README
+
+(libORBit2cpp-devel)
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_any.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_compound_seq.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_config.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_constants.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_exception.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_exceptionlist.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_object.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_orb.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_poa.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_poaexceptionlist.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_sequence.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_simple_seq.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_smartptr.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_string_seq.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_tools.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_traits.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_typecode.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_types.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/orbitcpp_var_smartptr.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/arrayfixed_forany.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/arrayfixed_var.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/arrayvariable_forany.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/arrayvariable_out.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/arrayvariable_var.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/data_out.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/data_var.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/datavar_out.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/datavar_var.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/objectptr_out.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/objectptr_var.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/sequence_out.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/sequence_var.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/string_out.h
+  /usr/include/orbitcpp-2.0/orbitcpp/orb-cpp/smartpointers/string_var.h
+  /usr/include/orbitcpp-2.0/services/name/CosNaming-cpp-common.h
+  /usr/include/orbitcpp-2.0/services/name/CosNaming-cpp-stubs.h
+  /usr/include/orbitcpp-2.0/services/name/CosNaming.h
+  /usr/lib/libORBit-2-cpp.dll.a
+  /usr/lib/libORBit-2-cpp.la
+  /usr/lib/libORBitCosNaming-2-cpp.dll.a
+  /usr/lib/libORBitCosNaming-2-cpp.la
+  /usr/lib/orbit-2.0/idl-backends/cygORBit-idl-backend-cpp.dll
+  /usr/lib/orbit-2.0/idl-backends/libORBit-idl-backend-cpp.la
+  /usr/lib/pkgconfig/ORBit-2.0-cpp.pc
+  /usr/lib/pkgconfig/ORBit-CosNaming-2.0-cpp.pc
+
+------------------
+
+Port Notes:
+
+----- version 1.3.9-2 -----
+Rearranged packages.
+
+----- version 1.3.9-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
