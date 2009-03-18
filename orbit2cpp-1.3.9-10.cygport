@@ -8,6 +8,7 @@ HOMEPAGE="http://orbitcpp.sourceforge.net/"
 PATCH_URI="
 	1.3.9-no-undefined.patch
 	1.3.9-vpath.patch
+	1.3.9-gcc4.patch
 "
 
 PKG_NAMES="${PN} libORBit2cpp9 libORBit2cpp-devel"
