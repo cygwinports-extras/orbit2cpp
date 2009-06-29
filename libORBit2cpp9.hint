@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgcc1 libglib2.0_0 libORBit2_0 libstdc++6
+requires: libgcc1 libglib2.0_0 libORBit2_0 libstdc++6
 external-source: orbit2cpp
 sdesc: "C++ bindings for the ORBit CORBA ORB (runtime)"
 ldesc: "C++ bindings for the ORBit CORBA ORB"

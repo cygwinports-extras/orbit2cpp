@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libglib2.0-devel libIDL2_0 libORBit2-devel libORBit2cpp9 libstdc++6-devel
+requires: libglib2.0-devel libIDL2_0 libORBit2-devel libORBit2cpp9 libstdc++6-devel
 external-source: orbit2cpp
 sdesc: "C++ bindings for the ORBit CORBA ORB (development)"
 ldesc: "C++ bindings for the ORBit CORBA ORB"
